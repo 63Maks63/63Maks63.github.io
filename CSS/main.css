@@ -1,0 +1,263 @@
+*{
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 300;
+}
+
+header,main,footer {
+   max-width:1440px; 
+   margin: auto;
+}
+
+body{
+   background: url('/IMG/elipse.png') 0 0 no-repeat fixed, url('/IMG/main_circle.png') right/contain no-repeat fixed;  ;
+}
+
+header  {
+   display: flex;
+   align-items: center;
+   margin: 80px auto;
+}
+
+.burger {
+   max-width: 96px;
+   min-width: 40px ;
+}
+
+h1 {
+   display: flex;
+   flex-direction: column;
+   margin: auto;
+   text-align: center;
+   font-size: 33px;
+   line-height: 41px;
+   letter-spacing: 0.75em;
+   color: #349942;
+}
+
+h1 strong{
+   font-size: 84px;
+   line-height: 102px;
+   font-weight: 800;
+   letter-spacing: 0.3em;
+   color: #454476;
+}
+
+.wrapper {
+   display: flex;
+   justify-content: space-between;
+}
+
+.form_el{
+   width: 380px;
+   background-color: #fff;;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   border-radius: 10px;
+}
+.form_header h2 {
+   font-weight: 700;
+   font-size: 20px;
+   text-transform: uppercase;
+   color: #fff;
+}
+
+.form_header {
+   border-radius: 10px 10px 0px 0px;
+   padding: 23px 27px;
+   background-color: #5E2ACC;
+}
+
+.input_div {
+   position: relative;
+   display: flex;
+   justify-content: space-between;
+
+   margin-top: 13px;
+   padding: 17px;
+   width: 100%;
+
+   background-color: #fff;
+   color: #393939b2;
+
+   border-radius: 10px;
+
+   font-size: 20px;
+}
+
+.input_method {
+   font-size: 20px;
+   font-weight: 700;
+   background-color: #fff;
+}
+
+.placeholder {
+   position: absolute;
+   left: 260px;
+   font-weight: 700;
+   font-size: 20px;
+   text-transform: uppercase;
+   color: #A8A8A8B2;
+}
+
+.radio {
+   padding: 15px 30px;
+   display: flex;
+   justify-content: space-between;
+   font-size: 20px;
+   
+   color: rgba(69, 68, 118, 0.8);
+}
+
+.circle {
+   width: 15px;
+   height: 15px;
+   border-radius: 100%;
+   background: #DDE6D2;
+}
+
+.checked{
+   background: #5E2ACC;
+}
+
+h3.scoreboard{
+   padding: 23px 27px;
+   color: #454476;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 20px;
+}
+
+.scoreboard {
+   padding: 23px 27px;
+}
+
+.board {
+   padding: 17px;
+   background-color: #fff;
+   color: #393939b2;
+   border-radius: 10px;
+   font-size: 20px;
+   background-color: #865AE64D;
+}
+
+.board_input{
+   
+   background-color: initial;
+   color: #000;
+
+}
+.board .placeholder{
+   color: #FFFFFFB2;
+}
+
+#form_div{
+   padding: 23px 27px;
+}
+
+.form_input{
+   border: 1.5px solid #C1B2E0;
+}
+
+.input_form::placeholder {
+   color: #a8a8a8b3;
+}
+
+.input_form{
+   width: 100%;
+   font-weight: 400;
+   font-size: 15px;
+   line-height: 18px;
+   color: #000;
+}
+
+.rules{
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 15px;
+   text-align: center;
+   margin-top: 5px;
+   color: #454476;
+}
+
+a.rules {
+   border-bottom: 1px solid #454476;
+}
+
+#submit{
+   width: 280px;
+   display: block;
+   margin: 22px auto;
+   justify-self: center;
+   padding: 12px;
+   border-radius: 10px;
+   font-weight: 700;
+   font-size: 20px;
+   background-color: #5E2ACC;
+   text-transform: uppercase;
+   color: #FFFFFF;
+}
+
+.reviews{
+   margin-top: 80px;
+}
+
+.reviews h2 {
+   font-weight: 800;
+   font-size: 25px;
+   line-height: 30px;
+   text-transform: uppercase;
+   margin-bottom: 55px;
+   color: #454476;
+}
+
+.review{
+   width: 350px;
+   padding: 16px 24px 13px 24px;
+
+   background: #FFF;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   border-radius: 10px;
+}
+
+.review_header{
+   display: flex;
+   align-items: center;
+}
+
+.review_header h3{
+   font-weight: 800;
+   font-size: 14px;
+   line-height: 14px;
+   text-transform: uppercase;
+   margin-left: 5px;
+   color: #454476;
+}
+
+.review_article{
+   font-weight: 400;
+   margin: 13px 0 11px 0;
+   font-size: 12px;
+   line-height: 14px;
+   color: #454476;
+
+}
+
+.reviews_gap {
+   display: grid;
+   grid-template: 1fr / repeat(3,350px);
+   grid-auto-flow: row;
+   justify-content:space-between;
+   gap: 100px;
+}
+
+footer {
+   margin-top: 110px;
+}
+
+footer p {
+   padding-bottom: 20px;
+   font-size: 12px;
+   line-height: 14px;
+
+   color: #454476;
+   text-align: end;
+}
