@@ -135,7 +135,7 @@ function onClickRadioBtns(btnsDiv, div) {
    const [input, placeholder] = [...div.children];
 
    btnsDiv.addEventListener('click', (event) => {
-      document.querySelectorAll('.input_value').forEach(el => el.value =0)
+
       if (event.target.closest('.radio')) {
          for (let i = 1; i < btnsDiv.childNodes.length; i++) {
             btnsDiv.childNodes[i].lastChild.classList.remove('checked');
@@ -245,6 +245,16 @@ function onChangeInput(nodes) {
 }
 
 onChangeInput(inputDivs)
+
+const burger = document.querySelector('.burger');
+const dropdownList = document.querySelector('.drop_links');
+function dropDown(burger, list){
+   burger.addEventListener('click', () => {
+      list.classList.toggle('hidden')
+   })
+}
+
+dropDown(burger,dropdownList)
 
 // const divForm = document.getElementById('form_div');
 

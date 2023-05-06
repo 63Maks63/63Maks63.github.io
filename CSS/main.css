@@ -9,7 +9,7 @@ header,main,footer {
 }
 
 body{
-   background: url('/IMG/elipse.png') 0 0 no-repeat fixed, url('/IMG/main_circle.png') right/contain no-repeat fixed;  ;
+   background: url('/IMG/elipse.png') 0 0 no-repeat fixed, url('/IMG/main_circle.png') right/contain no-repeat fixed; 
 }
 
 header  {
@@ -18,9 +18,66 @@ header  {
    margin: 80px auto;
 }
 
+@media screen and (max-width:1500px) {
+   header,main,footer {
+      max-width:1200px;
+   }
+}
+
+@media screen and (max-width:1230px) {
+   body{
+      background: url('/IMG/elipse.png') 0 0/40% no-repeat fixed, url('/IMG/main_circle.png') right/contain no-repeat fixed; 
+   }
+   
+   header,main,footer {
+      max-width:900px;
+   }
+}
+
+@media screen and (max-width:950px) {
+   header,main,footer {
+      max-width:630px;
+   }
+}
+
+@media screen and (max-width:670px) {
+   body{
+      background: url('/IMG/elipse-mob.png') center -100px no-repeat fixed; 
+   }
+   
+   header,main,footer {
+      max-width:360px;
+   }
+   header{
+      margin: 40px auto;  
+   }
+}
+
 .burger {
    max-width: 96px;
    min-width: 40px ;
+   background-color: #FFF;
+   text-align: center;
+}
+.drop_links a{
+   display: block;
+   padding: 10px;
+}
+
+.drop_links {
+   z-index: 1;
+   position: fixed;
+   background-color: #fff;
+   font-weight: 400;
+   font-size: 23px;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   border-radius: 0px 0px 20px 0px;
+   color: #454476;
+   line-height: 28px;
+}
+
+.hidden{
+   display: none;
 }
 
 h1 {
@@ -42,10 +99,27 @@ h1 strong{
    color: #454476;
 }
 
+@media screen and (max-width:670px) {
+   h1 {
+      font-size: 16.1173px;
+      line-height: 20px;
+      letter-spacing: 0.635em;
+     }
+     h1 strong {
+      font-size: 40px;
+      line-height: 49px;
+      letter-spacing: 0.285em;
+    }
+     .burger{
+        max-width: 37px;
+     }
+}
+
 .wrapper {
    display: flex;
-   justify-content: space-between;
+   justify-content: space-around;
 }
+
 
 .form_el{
    width: 380px;
@@ -83,6 +157,7 @@ h1 strong{
    font-size: 20px;
 }
 
+
 .input_method {
    font-size: 20px;
    font-weight: 700;
@@ -116,6 +191,55 @@ h1 strong{
 
 .checked{
    background: #5E2ACC;
+}
+
+@media screen and (max-width:1230px) {
+   .form_el{
+      width: 280px;
+   }
+   .form_header h2 {
+      font-size: 16px;
+   }
+   .form_header {
+      padding: 18px 18px;
+   }
+   .input_div {
+      margin-top: 10px;
+      padding: 8px;
+      font-size: 10px;
+   }
+   .input_method {
+      font-size: 14px;
+   }
+   .placeholder {
+      left: 190px;
+      font-size: 14px;
+   }
+   .radio {
+      padding: 12px 18px;
+      font-size: 16px;
+   }
+   .circle {
+      width: 12px;
+      height: 12px;
+
+   }
+}
+@media screen and (max-width:950px) {
+   .wrapper {
+      display: grid;
+      justify-content: space-between;
+      gap: 20px;
+   }
+}
+
+@media screen and (max-width:670px) {
+   .wrapper {
+      justify-content: center;
+   }
+   .form_el {
+      width: 270px;
+   }
 }
 
 h3.scoreboard{
@@ -186,7 +310,6 @@ a.rules {
    width: 280px;
    display: block;
    margin: 22px auto;
-   justify-self: center;
    padding: 12px;
    border-radius: 10px;
    font-weight: 700;
@@ -194,6 +317,74 @@ a.rules {
    background-color: #5E2ACC;
    text-transform: uppercase;
    color: #FFFFFF;
+}
+
+@media screen and (max-width:1230px){
+   h3.scoreboard{
+      padding: 0 13px;
+      margin: 10px 0;
+      font-size: 16px;
+   }
+   
+   .scoreboard {
+      padding:  0 13px;
+      margin: 20px 0;
+      font-size: 16px;
+   }
+   
+   .board {
+      padding: 8px;
+      font-size: 14px;
+   }
+   
+   #form_div{
+      padding: 0 13px;
+      margin: 20px 0;
+   }
+   
+   .input_form{
+      font-size: 12px;
+   }
+   .rules{
+      font-size: 10px;
+      line-height: 10px;
+      margin-top: 5px;
+ 
+   }
+   #submit{
+      width: 180px;
+      margin:60px auto;
+      padding: 15px 10px;
+      font-size: 14px;
+   }
+}
+@media screen and (max-width:950px){
+   #scoreboard_el{
+      grid-column: 1 / span 2;
+      width: inherit;
+      height: fit-content;
+   }
+   .scoreboard_placeholder {
+      left: 530px;
+   }
+   
+   #submit{
+      width: 180px;
+      margin:10px auto;
+   }
+}
+@media screen and (max-width:670px) {
+   #scoreboard_el{
+      grid-column: 1 ;
+      width: 280px;
+   }
+   .scoreboard_placeholder {
+      left: 200px;
+   }
+   #submit{
+      width: 180px;
+      margin:10px auto;
+   }
 }
 
 .reviews{
@@ -210,7 +401,7 @@ a.rules {
 }
 
 .review{
-   width: 350px;
+   width: fit-content;
    padding: 16px 24px 13px 24px;
 
    background: #FFF;
@@ -243,10 +434,32 @@ a.rules {
 
 .reviews_gap {
    display: grid;
-   grid-template: 1fr / repeat(3,350px);
-   grid-auto-flow: row;
+   grid-template: 1fr 1fr / 1fr 1fr 1fr;
    justify-content:space-between;
    gap: 100px;
+}
+
+@media screen and (max-width:1230px){
+   .reviews_gap {
+      gap: 60px;
+   }
+   .reviews{
+      margin-top: 40px;
+   }
+   
+   .reviews h2 {
+      font-size: 20px;
+      margin-bottom: 40px;
+   }
+}
+
+@media screen and (max-width:670px) {
+   .reviews_gap {
+      display: grid;
+      grid-template: 1fr/1fr;
+      justify-content:space-between;
+      gap: 40px;
+   }
 }
 
 footer {
