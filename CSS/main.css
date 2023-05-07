@@ -63,9 +63,14 @@ header  {
    padding: 10px;
 }
 
+.drop_links a:hover{
+   font-size: 26px;
+   transition: 0.5s;
+}
+
 .drop_links {
    z-index: 1;
-   position: fixed;
+   position: absolute;
    background-color: #fff;
    font-weight: 400;
    font-size: 23px;
@@ -310,7 +315,7 @@ a.rules {
    border-bottom: 1px solid #454476;
 }
 
-#submit{
+.submit{
    width: 280px;
    display: block;
    margin: 22px auto;
@@ -355,7 +360,7 @@ a.rules {
       margin-top: 5px;
  
    }
-   #submit{
+   .submit{
       width: 180px;
       margin:60px auto;
       padding: 15px 10px;
@@ -372,7 +377,7 @@ a.rules {
       left: 530px;
    }
    
-   #submit{
+   .submit{
       width: 180px;
       margin:10px auto;
    }
@@ -385,7 +390,7 @@ a.rules {
    .scoreboard_placeholder {
       left: 200px;
    }
-   #submit{
+   .submit{
       width: 180px;
       margin:10px auto;
    }
@@ -474,7 +479,126 @@ footer p {
    padding-bottom: 20px;
    font-size: 12px;
    line-height: 14px;
-
    color: #454476;
    text-align: end;
+}
+
+.pop_up_background {
+   position: fixed;
+   z-index: 2;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   background-color: rgb(0, 0, 0, 0.6);
+}
+.pop_up_wrapper {
+   align-items: center;
+   padding: 40px 50px;
+}
+
+.pop_up_body {
+   margin:80px auto;
+   background-color: #fff;
+   color: #000;
+   max-width: 800px;
+}
+
+
+.img_lock {
+   margin-left: 30px;
+}
+
+.purchase_header {
+   font-weight: 600;
+   font-size: 35px;
+   line-height: 43px;
+   color: rgba(69, 68, 118, 0.7);
+}
+ .span{
+   font-weight: 600;
+   color:#454476;
+}
+
+.purchase_info{
+   margin-top: 25px;
+}
+
+.span{
+   margin-bottom: 15px;
+}
+
+.purchase_description {
+   margin-top: 25px;
+}
+
+.res_placeholder{
+   left: 330px;
+}
+
+.wallet {
+   font-size: 13px;
+   font-weight: 600;
+}
+
+@media screen and (max-height:800px) {
+   .pop_up_background {
+      overflow: scroll;
+   }
+}
+
+@media screen and (max-width:950px){
+   .img_lock{
+      display: none;
+   }
+
+   .pop_up_body {
+      max-width: 400px;
+   }
+
+   .res_placeholder{
+      left: 250px;
+   }
+   .wallet {
+      font-size: 10px;
+   }
+
+}
+@media screen and (max-width:670px) {
+   .res_placeholder{
+      left: 255px;
+   }
+}
+
+#purchase_pop_up_background {
+   background-color: rgb(0, 0, 0, 0.8);
+}
+
+.application {
+   margin-top: 150px;
+   padding: 70px 45px;
+   max-width: contain;
+   border-radius: 10px;
+}
+
+.application img{
+   display: block;
+   margin: 15px auto;
+}
+
+.application h2{
+   margin: 15px 0;
+   font-weight: 500;
+   font-size: 33px;
+   line-height: 41px;
+   color: #000000;
+   text-align: center;
+}
+
+.application p {
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 24px;
+   text-align: center;
+   color: #000000;
 }

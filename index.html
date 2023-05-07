@@ -17,9 +17,7 @@
 <body>
    <header>
       <div class="dropdown">
-         <button class="burger" >
-            <!-- <img src="../IMG/menu.png" alt="burger" > -->
-         </button>
+         <button class="burger" ></button>
          <div class="drop_links hidden">
             <a href="">Главная</a>
             <a href="">Правила обмена</a>
@@ -73,21 +71,18 @@
                <form action="#">
                   <div class="input_div form_input">
                      <input class="input_method input_form"  id="pay_method" placeholder="Номер карты Visa/MC">
-                     <!-- <img src="" alt="" class="placeholder"> -->
                   </div>
                   <div class="input_div form_input">
                      <input class="input_method input_form" placeholder="E-mail">
-                     <!-- <img src="" alt="" class="placeholder"> -->
                   </div>
                   <div class="input_div form_input">
                      <input class="input_method input_form" placeholder="ФИО">
-                     <!-- <img src="" alt="" class="placeholder"> -->
                   </div>
                </form>
                <p class="rules">
                   Нажимая на кнопку "Перейти к оплате", я соглашаюсь с <a href="" class="rules">правилами обмена</a>.
                </p>
-               <button id="submit">
+               <button class="submit" id="submit">
                   перейти к оплате
                </button>
             </div>
@@ -163,6 +158,58 @@
    <footer>
       <p>Copyright © 2023, Сервис электронного обмена валюты</p>
    </footer>
+
+<div class="pop_up_background hidden" id="form_pop_up_background">
+   <div class="pop_up_body">
+      <div class="wrapper pop_up_wrapper">
+         <div class="purchase_main ">
+            <h2 class="purchase_header">Оплата заявки<span class="span"> №823593</span></h2>
+            <div class="purchase_info">
+               <h3 class="span">Вы производите обмен:</h3>
+               <div class="input_div board">
+                  <input class="input_method board_input value" value="0" type="number" disabled>
+                  <p class="placeholder scoreboard_placeholder res_placeholder" data-rub="2215838.98" data-usdt="10.25">BTC</p>
+               </div>
+               <div class="input_div board">
+                  <input class="input_method board_input value" value="0" disabled>
+                  <p class="placeholder scoreboard_placeholder res_placeholder" data-abb="RUB" data-rub="card">RUB</p>
+               </div>
+            </div>
+            <div class="purchase_description">
+               <h3 class="span">Произведите оплату в течение 20 минут</h3>
+               <p>После оплаты не забудьте нажать кнопку 'Я оплатил', в противном случае ваша заявка может затеряться, и нам понадобится время, чтобы обработать ее в ручную.</p>
+            </div>
+            <div>
+               <div class="purchase_info">
+                  <h3 class="span">Реквизиты для оплаты:</h3>
+                  <input type="text" class=" form_input input_div wallet" value="Кошелек: TYt1CoY43ASFDWKgTQDv3G9NiHyosdm129" disabled>
+                  <div class="input_div form_input">
+                     <input type="text" class="input_method value" value="Сумма: 0" id="result_coin" disabled>
+                     <p class="placeholder scoreboard_placeholder res_placeholder" data-abb="RUB" data-rub="card">BTC</p>
+                  </div>
+               </div>
+            </div>
+            <button class="submit" id="pay">я оплатил</button>
+         </div>
+         <div class="img_lock">
+            <img src="./IMG/lock.png" alt="lock" class="lock">
+         </div>
+      </div>
+   </div>
+</div>
+
+<div class="pop_up_background hidden" id="purchase_pop_up_background">
+   <div class="application pop_up_body">
+      <img src="./IMG/vector.png" alt="vector">
+      <h2>Ваша заявка принята в обработку</h2>
+      <p>В течение 5-15 минут, после поступления Ваших денег на наш счёт, она будет обработана и средства будут перечислены на указанный вами кошелёк или счёт. 
+         Пожалуйста убедитесь, что вы не только нажали на кнопку 
+         "Я оплатил", но и действительно перевели к нам средства. По всем вопросам или в случае задержки обмена, обращайтесь в техническую поддержку. 
+         С Уважением, администрация сайта.</p>
+   </div>
+</div>
+
+
    <script src="./JS/main.js"></script>
 </body>
 
