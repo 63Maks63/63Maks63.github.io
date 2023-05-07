@@ -135,7 +135,7 @@ function onClickRadioBtns(btnsDiv, div) {
    const [input, placeholder] = [...div.children];
 
    btnsDiv.addEventListener('click', (event) => {
-
+      document.querySelectorAll('.value').forEach(input => input.value = 0)
       if (event.target.closest('.radio')) {
          for (let i = 1; i < btnsDiv.childNodes.length; i++) {
             btnsDiv.childNodes[i].lastChild.classList.remove('checked');
@@ -163,7 +163,7 @@ function onClickRadioBtns(btnsDiv, div) {
                event.target.parentElement.lastChild.classList.add('checked');
                placeholder.textContent = event.target.parentElement.dataset.abb;
 
-               switch (event.target.dataset.rub ) {
+               switch (event.target.parentElement.dataset.rub ) {
                   case 'phone':
                      payPlaceholder.placeholder = 'Номер мобильного телефона';
                      break;

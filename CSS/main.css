@@ -54,10 +54,9 @@ header  {
 }
 
 .burger {
-   max-width: 96px;
-   min-width: 40px ;
+   background: url('/IMG/menu.png')  center/cover no-repeat;
+   padding: 30px 45px;
    background-color: #FFF;
-   text-align: center;
 }
 .drop_links a{
    display: block;
@@ -110,9 +109,14 @@ h1 strong{
       line-height: 49px;
       letter-spacing: 0.285em;
     }
-     .burger{
-        max-width: 37px;
-     }
+    .drop_links a{
+      padding: 5px;
+   }
+   
+   .drop_links {
+      font-size: 16px;
+      line-height: 14px;
+   }
 }
 
 .wrapper {
