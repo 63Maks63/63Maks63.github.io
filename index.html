@@ -19,16 +19,16 @@
       <div class="dropdown">
          <button class="burger" ></button>
          <div class="drop_links hidden">
-            <a href="">Главная</a>
-            <a href="">Правила обмена</a>
-            <a href="">Контакты</a>
-            <a href="">Поддержка</a>
+            <a href="#main">Главная</a>
+            <a href="#review">Отзывы</a>
+            <a href="/HTML/rules.html">Правила обмена</a>
+            <a href="#support">Поддержка</a>
          </div>
       </div>
 
       <h1><strong>EMIRI</strong>EXCHANGE</h1>
    </header>
-   <main>
+   <main id="main">
       <div class="wrapper">
          <div class="form_el" id="coinsForm">
             <div class="form_header">
@@ -68,34 +68,34 @@
                </div>
             </div>
             <div id="form_div">
-               <form action="#">
+               <form>
                   <div class="input_div form_input">
-                     <input class="input_method input_form"  id="pay_method" placeholder="Номер карты Visa/MC">
+                     <input class="input_method input_form" type="number" id="pay_method" placeholder="Номер карты Visa/MC" required>
                   </div>
                   <div class="input_div form_input">
-                     <input class="input_method input_form" placeholder="E-mail">
+                     <input class="input_method input_form" type="email" placeholder="E-mail" required>
                   </div>
                   <div class="input_div form_input">
-                     <input class="input_method input_form" placeholder="ФИО">
+                     <input class="input_method input_form" type="text" placeholder="ФИО" required>
                   </div>
+                  <p class="rules">
+                     Нажимая на кнопку "Перейти к оплате", я соглашаюсь с <a href="/HTML/rules.html" class="rules">правилами обмена</a>.
+                  </p>
+                  <button class="submit" id="submit">
+                     перейти к оплате
+                  </button>
                </form>
-               <p class="rules">
-                  Нажимая на кнопку "Перейти к оплате", я соглашаюсь с <a href="" class="rules">правилами обмена</a>.
-               </p>
-               <button class="submit" id="submit">
-                  перейти к оплате
-               </button>
             </div>
          </div>
       </div>
 
-      <div class="reviews">
-         <h2>Что клиенты говорят о нас</h2>
+      <div class="reviews" id="review">
+         <h2 class="block_header">Что клиенты говорят о нас</h2>
          <div class="reviews_gap">
             <div class="review">
                <div class="review_header">
                   <img src="../IMG/сomment.png" alt="comment">
-                  <h3>Maks</h3>
+                  <h3>Максим</h3>
                </div>
                <p class="review_article">
                   Всё быстро и надёжно, пользуюсь не первый раз, вежливая и быстрая поддержка, всем рекомендую.
@@ -105,52 +105,71 @@
             <div class="review">
                <div class="review_header">
                   <img src="../IMG/сomment.png" alt="comment">
-                  <h3>Maks</h3>
+                  <h3>Павел</h3>
                </div>
-               <p class="review_article">
-                  Всё быстро и надёжно, пользуюсь не первый раз, вежливая и быстрая поддержка, всем рекомендую.
+               <p class="review_article">Всё быстро, чётко, спасибо команде EMIRATX! Менял Tron на карту. Деньги пришли за 5 минут. Курс ваще бомба!
                </p>
                <p class="date">Сегодня</p>
             </div>
             <div class="review">
                <div class="review_header">
                   <img src="../IMG/сomment.png" alt="comment">
-                  <h3>Maks</h3>
+                  <h3>Жека</h3>
                </div>
-               <p class="review_article">
-                  Всё быстро и надёжно, пользуюсь не первый раз, вежливая и быстрая поддержка, всем рекомендую.
+               <p class="review_article">Как всегда на уровне! Спасибо за быстрый обмен и шикарный курс.
                </p>
                <p class="date">Сегодня</p>
             </div>
             <div class="review">
                <div class="review_header">
                   <img src="../IMG/сomment.png" alt="comment">
-                  <h3>Maks</h3>
+                  <h3>Андрей </h3>
                </div>
-               <p class="review_article">
-                  Всё быстро и надёжно, пользуюсь не первый раз, вежливая и быстрая поддержка, всем рекомендую.
+               <p class="review_article">ОГОНЬ! переводил в 3 часа ночи и допустил ошибку написал в саппорт телеграмма и получил ответ моментально, который спас от потери не малой суммы!
                </p>
                <p class="date">Сегодня</p>
             </div>
             <div class="review">
                <div class="review_header">
                   <img src="../IMG/сomment.png" alt="comment">
-                  <h3>Maks</h3>
+                  <h3>Максим</h3>
                </div>
-               <p class="review_article">
-                  Всё быстро и надёжно, пользуюсь не первый раз, вежливая и быстрая поддержка, всем рекомендую.
+               <p class="review_article">Всё быстро и надёжно, пользуюсь не первый раз, вежливая и быстрая поддержка, всем рекомендую.
                </p>
                <p class="date">Сегодня</p>
             </div>
             <div class="review">
                <div class="review_header">
                   <img src="../IMG/сomment.png" alt="comment">
-                  <h3>Maks</h3>
+                  <h3>Оксана</h3>
                </div>
                <p class="review_article">
-                  Всё быстро и надёжно, пользуюсь не первый раз, вежливая и быстрая поддержка, всем рекомендую.
+                  Очень довольна! Рекомендую 100%. Через пару минут деньги были в кошельке. Всегда обмениваю тут криптовадюту Трон на рубли. Спасибо вам большое!
                </p>
                <p class="date">Сегодня</p>
+            </div>
+         </div>
+      </div>
+
+      <div id="support" class="support">
+         <h2 class="block_header">Поддержка</h2>
+         <div class="wrapper support_wrapper">
+            <div class="support_block">
+               <div class="support_info">
+                  <img src="./IMG/clock.png" alt="clock">
+                  <p>Работаем круглосуточно</p>
+               </div>
+               <div class="support_info">
+                  <img src="./IMG/mail.png" alt="e-mail">
+                  <p>Поддержка по почте: <a href="mailto:support@emiri.ex">support@emiri.ex</a></p>
+               </div>
+            </div>
+            <div class="support_block">
+               <p>По любым вопросам вы можете 
+                  обратиться в чат. Оператор свяжется 
+                  с вами в течение 3 минут и постарается 
+                  помочь.</p>
+                  <button class="support_btn"><a href="https://t.me/Alina_TRX">написать оператору</a></button>
             </div>
          </div>
       </div>
@@ -199,18 +218,23 @@
 </div>
 
 <div class="pop_up_background hidden" id="purchase_pop_up_background">
-   <div class="application pop_up_body">
-      <img src="./IMG/vector.png" alt="vector">
-      <h2>Ваша заявка принята в обработку</h2>
-      <p>В течение 5-15 минут, после поступления Ваших денег на наш счёт, она будет обработана и средства будут перечислены на указанный вами кошелёк или счёт. 
-         Пожалуйста убедитесь, что вы не только нажали на кнопку 
-         "Я оплатил", но и действительно перевели к нам средства. По всем вопросам или в случае задержки обмена, обращайтесь в техническую поддержку. 
-         С Уважением, администрация сайта.</p>
+   <div class="pop_up_body">
+      <div class="reloadBtnDiv">
+         <button id="reloadBtn">Закрыть</button>
+      </div>
+      <div class="application">
+         <img src="./IMG/vector.png" alt="vector">
+         <h2>Ваша заявка принята в обработку</h2>
+         <p>В течение 5-15 минут, после поступления Ваших денег на наш счёт, она будет обработана и средства будут перечислены на указанный вами кошелёк или счёт. 
+            Пожалуйста убедитесь, что вы не только нажали на кнопку 
+            "Я оплатил", но и действительно перевели к нам средства. По всем вопросам или в случае задержки обмена, обращайтесь в техническую поддержку. 
+            С Уважением, администрация сайта.</p>
+      </div>
    </div>
 </div>
 
 
-   <script src="./JS/main.js"></script>
+   <script type="module" src="./JS/main.js"></script>
 </body>
 
 </html>
