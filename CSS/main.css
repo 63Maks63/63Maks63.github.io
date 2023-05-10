@@ -496,7 +496,8 @@ footer p {
 }
 
 .pop_up_body {
-   margin:40px auto;
+   margin: 10vh auto;
+   border-radius: 10px;
    background-color: #fff;
    color: #000;
    max-width: 800px;
@@ -543,7 +544,15 @@ footer p {
    .pop_up_background {
       overflow: scroll;
    }
+   .pop_up_body {
+      margin: 0vh auto;
+   }
+   .center{
+      margin-top: 10%;
+   }
 }
+
+
 
 @media screen and (max-width:950px){
    .img_lock{
@@ -603,12 +612,14 @@ footer p {
 .reloadBtnDiv{
    display: flex;
    justify-content: end;
+
 }
 
 #reloadBtn {
    padding: 10px;
    background-color: #FFF;
-   font-size: 20px;
+   font-size: 25px;
+   font-weight: 400;
 }
 
 .support{
@@ -692,3 +703,16 @@ footer p {
     letter-spacing: 0.02em;
 }
 
+.center {
+   margin-top: 25vh;
+}
+@media screen and (max-width:670px) {
+   .center{
+      margin-top: 5vh;
+   }
+}
+@media screen and (max-width:950px){
+   .center{
+      margin-top: 5vh;
+   }
+}
